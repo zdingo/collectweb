@@ -11,7 +11,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-app.use(orm.express('mysql://root:dragon@115.28.234.159:3306/collect', {
+app.use(orm.express('mysql://root:**2n@115.28.234.159:3306/collect', {
 	define: function(db, models, next) {
 		models.article = db.define("t_article", {
 			id : String,
